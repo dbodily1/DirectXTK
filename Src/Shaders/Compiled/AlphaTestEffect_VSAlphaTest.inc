@@ -43,7 +43,11 @@
     dcl_texcoord v0  // vin<0,1,2,3>
     dcl_texcoord1 v1  // vin<4,5>
 
+<<<<<<< HEAD
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+=======
+#line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     dp4 oPos.z, v0, c5  // ::VSAlphaTest<12>
 
 #line 14
@@ -56,6 +60,7 @@
     dp4 r0.y, v0, c4  // ::vout<1>
     dp4 r0.z, v0, c6  // ::vout<3>
 
+<<<<<<< HEAD
 #line 31 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSAlphaTest<10,11>
     mov oPos.w, r0.z  // ::VSAlphaTest<13>
@@ -65,6 +70,17 @@
     mov oT1.xyz, c7.x  // ::VSAlphaTest<4,5,6>
 
 #line 38 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+=======
+#line 31 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+    mad oPos.xy, r0.z, c0, r0  // ::VSAlphaTest<10,11>
+    mov oPos.w, r0.z  // ::VSAlphaTest<13>
+
+#line 50 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+    mov oT0, c1  // ::VSAlphaTest<0,1,2,3>
+    mov oT1.xyz, c7.x  // ::VSAlphaTest<4,5,6>
+
+#line 38 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     mov oT2.xy, v1  // ::VSAlphaTest<8,9>
 
 // approximately 12 instruction slots used
@@ -90,10 +106,17 @@ ret
 
 const BYTE AlphaTestEffect_VSAlphaTest[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 149, 237, 
     230, 158, 255, 251, 158,  37, 
     226, 181, 230,  53, 161,  36, 
      45, 210,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 158, 198, 
+     81, 160,  10, 151,  98, 193, 
+    190,   8, 165, 254,   2, 192, 
+    119, 146,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     252,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     188,   4,   0,   0,  24,   6, 
@@ -120,6 +143,7 @@ const BYTE AlphaTestEffect_VSAlphaTest[] =
       0,   0, 236,   2,   0,   0, 
      64,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -145,6 +169,33 @@ const BYTE AlphaTestEffect_VSAlphaTest[] =
     115, 116,  69, 102, 102, 101, 
      99, 116,  46, 102, 120,   0, 
      40,   0,   0,   0, 112,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  67, 111, 
+    109, 109, 111, 110,  46, 102, 
+    120, 104,   0,  67,  58,  92, 
+     85, 115, 101, 114, 115,  92, 
+    100, 110, 103, 111, 105, 110, 
+    115,  92,  83, 111, 117, 114, 
+     99, 101,  92,  82, 101, 112, 
+    111, 115,  92,  68, 110, 103, 
+    111, 105, 110, 115,  92,  68, 
+    105, 114, 101,  99, 116,  88, 
+     84,  75,  92,  83, 114,  99, 
+     92,  83, 104,  97, 100, 101, 
+    114, 115,  92,  65, 108, 112, 
+    104,  97,  84, 101, 115, 116, 
+     69, 102, 102, 101,  99, 116, 
+     46, 102, 120,   0, 171, 171, 
+     40,   0,   0,   0, 111,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0,   0,   0, 255, 255, 
      92,   3,   0,   0,   0,   0, 
     255, 255, 116,   3,   0,   0, 

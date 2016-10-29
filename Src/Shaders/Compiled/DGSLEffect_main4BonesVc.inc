@@ -61,7 +61,11 @@
     dcl_texcoord5 v5  // vertex<17,18,19,20>
     dcl_texcoord6 v6  // vertex<21,22,23,24>
 
+<<<<<<< HEAD
 #line 112 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLEffect.fx"
+=======
+#line 112 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLEffect.fx"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     mul r0, v5, c228.x
     mova a0, r0.yxzw
     mul r1, v6.y, c0[a0.x]
@@ -200,10 +204,17 @@ ret
 
 const BYTE DGSLEffect_main4BonesVc[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 201, 135, 
     166, 197,  28, 191, 247, 136, 
      54,  33, 223,  39, 178,  89, 
     162, 136,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 105,  36, 
+    208, 170, 216, 209, 162,  70, 
+    171,  24, 210, 103,  94, 187, 
+    136, 197,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     228,  18,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     124,  10,   0,   0, 252,  16, 
@@ -238,6 +249,7 @@ const BYTE DGSLEffect_main4BonesVc[] =
       0,   0, 180,   5,   0,   0, 
      24,   2,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -250,6 +262,20 @@ const BYTE DGSLEffect_main4BonesVc[] =
      71,  83,  76,  69, 102, 102, 
     101,  99, 116,  46, 102, 120, 
       0, 171,  40,   0,   0,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  68,  71, 
+     83,  76,  69, 102, 102, 101, 
+     99, 116,  46, 102, 120,   0, 
+    171, 171,  40,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0, 255, 255,  96,   6, 
       0,   0,   0,   0, 255, 255, 
     120,   6,   0,   0,   0,   0, 

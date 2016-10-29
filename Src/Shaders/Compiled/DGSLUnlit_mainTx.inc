@@ -38,7 +38,11 @@
     dcl t1.xy  // pixel<8,9>
     dcl_2d s0
 
+<<<<<<< HEAD
 #line 117 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
+=======
+#line 117 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     texld r0, t1, s0
     mul r1, r0, t0  // ::local3<0,1,2>, ::local4<0>
     mov oC0, r1  // ::mainTx<0,1,2,3>
@@ -59,10 +63,17 @@ ret
 
 const BYTE DGSLUnlit_mainTx[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 251, 105, 
      62,   6, 137,  28, 155, 237, 
     127, 119,  43, 114,  95, 197, 
      10,  85,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67,   9, 226, 
+     70,  10, 203, 143, 236, 163, 
+     16, 190,   3,  29, 224, 251, 
+    177, 113,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     224,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      36,   3,   0,   0, 192,   3, 
@@ -85,6 +96,7 @@ const BYTE DGSLUnlit_mainTx[] =
       0,   0, 236,   1,   0,   0, 
     240,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -97,6 +109,20 @@ const BYTE DGSLUnlit_mainTx[] =
      71,  83,  76,  85, 110, 108, 
     105, 116,  46, 104, 108, 115, 
     108,   0,  40,   0,   0,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  68,  71, 
+     83,  76,  85, 110, 108, 105, 
+    116,  46, 104, 108, 115, 108, 
+      0, 171,  40,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0, 255, 255, 112,   2, 
       0,   0,   0,   0, 255, 255, 
     124,   2,   0,   0,   0,   0, 

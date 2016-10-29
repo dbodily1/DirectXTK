@@ -44,7 +44,11 @@
     dcl t2.xyz  // pixel<10,11,12>
     dcl t4.xyz  // pixel<16,17,18>
 
+<<<<<<< HEAD
 #line 104 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+=======
+#line 104 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     mov r0.xyz, c1  // MaterialVars::MaterialSpecular<0,1,2>
     mul r1.xyz, r0, c4
     mul r2.xyz, r0, c5
@@ -179,10 +183,17 @@ ret
 
 const BYTE DGSLPhong_main[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 145, 228, 
      63, 219, 246, 199,   6, 222, 
     145, 182, 226, 253, 100,   9, 
     201, 136,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 195, 147, 
+    161,  50, 254, 126, 119,  48, 
+     81, 139, 231, 199,  57,  48, 
+      6, 179,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       8,  17,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     180,   9,   0,   0, 232,  15, 
@@ -216,6 +227,7 @@ const BYTE DGSLPhong_main[] =
      14,   0,   0,   0, 252,   4, 
       0,   0,  36,   3,   0,   0, 
      67,  58,  92,  85, 115, 101, 
+<<<<<<< HEAD
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -228,6 +240,20 @@ const BYTE DGSLPhong_main[] =
      92,  68,  71,  83,  76,  80, 
     104, 111, 110, 103,  46, 104, 
     108, 115, 108,   0,  40,   0, 
+=======
+    114, 115,  92, 100, 110, 103, 
+    111, 105, 110, 115,  92,  83, 
+    111, 117, 114,  99, 101,  92, 
+     82, 101, 112, 111, 115,  92, 
+     68, 110, 103, 111, 105, 110, 
+    115,  92,  68, 105, 114, 101, 
+     99, 116,  88,  84,  75,  92, 
+     83, 114,  99,  92,  83, 104, 
+     97, 100, 101, 114, 115,  92, 
+     68,  71,  83,  76,  80, 104, 
+    111, 110, 103,  46, 104, 108, 
+    115, 108,   0, 171,  40,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0,   0,   0, 255, 255, 
      72,   6,   0,   0,   0,   0, 
     255, 255,  96,   6,   0,   0, 

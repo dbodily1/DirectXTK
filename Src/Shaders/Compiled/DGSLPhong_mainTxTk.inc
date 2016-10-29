@@ -53,7 +53,11 @@
     dcl t4.xyz  // pixel<16,17,18>
     dcl_2d s0
 
+<<<<<<< HEAD
 #line 204 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+=======
+#line 204 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     texld r0, t1, s0
     mul r1.w, r0.w, t0.w  // ::local6<0>
 
@@ -209,10 +213,17 @@ ret
 
 const BYTE DGSLPhong_mainTxTk[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67,  66, 181, 
      16, 137, 202, 100,  42,  75, 
     200, 186,  15, 197,   9,   4, 
     195, 160,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 122,  63, 
+    158,   4,  58, 118,  75, 249, 
+     77,  64, 165, 184, 192, 143, 
+    208,  63,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
      16,  18,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      36,  10,   0,   0, 240,  16, 
@@ -247,6 +258,7 @@ const BYTE DGSLPhong_mainTxTk[] =
       0,   0,  12,   5,   0,   0, 
      72,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -259,6 +271,20 @@ const BYTE DGSLPhong_mainTxTk[] =
      71,  83,  76,  80, 104, 111, 
     110, 103,  46, 104, 108, 115, 
     108,   0,  40,   0,   0,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  68,  71, 
+     83,  76,  80, 104, 111, 110, 
+    103,  46, 104, 108, 115, 108, 
+      0, 171,  40,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0, 255, 255,  88,   6, 
       0,   0,   0,   0, 255, 255, 
     112,   6,   0,   0,   0,   0, 

@@ -44,7 +44,11 @@
     dcl t2.xyz  // pixel<10,11,12>
     dcl t4.xyz  // pixel<16,17,18>
 
+<<<<<<< HEAD
 #line 158 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+=======
+#line 158 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     mul r0.w, t0.w, t0.w
     cmp r0, -r0.w, c13.x, c13.y
     texkill r0
@@ -192,10 +196,17 @@ ret
 
 const BYTE DGSLPhong_mainTk[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 139, 247, 
      29, 159, 167, 201, 253,  90, 
      91, 112, 202, 229,  17,  73, 
      54, 176,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67,  38, 249, 
+     89, 255,  38, 214, 141,  41, 
+     49,  43,  22, 127, 226, 248, 
+    109,  21,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
      44,  17,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     176,   9,   0,   0,  12,  16, 
@@ -229,6 +240,7 @@ const BYTE DGSLPhong_mainTk[] =
      13,   0,   0,   0, 224,   4, 
       0,   0,   8,   3,   0,   0, 
      67,  58,  92,  85, 115, 101, 
+<<<<<<< HEAD
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -241,6 +253,20 @@ const BYTE DGSLPhong_mainTk[] =
      92,  68,  71,  83,  76,  80, 
     104, 111, 110, 103,  46, 104, 
     108, 115, 108,   0,  40,   0, 
+=======
+    114, 115,  92, 100, 110, 103, 
+    111, 105, 110, 115,  92,  83, 
+    111, 117, 114,  99, 101,  92, 
+     82, 101, 112, 111, 115,  92, 
+     68, 110, 103, 111, 105, 110, 
+    115,  92,  68, 105, 114, 101, 
+     99, 116,  88,  84,  75,  92, 
+     83, 114,  99,  92,  83, 104, 
+     97, 100, 101, 114, 115,  92, 
+     68,  71,  83,  76,  80, 104, 
+    111, 110, 103,  46, 104, 108, 
+    115, 108,   0, 171,  40,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0,   0,   0, 255, 255, 
      24,   6,   0,   0,   0,   0, 
     255, 255,  48,   6,   0,   0, 

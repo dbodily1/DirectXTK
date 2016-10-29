@@ -41,14 +41,22 @@
     dcl t2.xy  // pin<8,9>
     dcl_2d s0
 
+<<<<<<< HEAD
 #line 91 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+=======
+#line 91 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     texld r0, t2, s0
     mad r1.w, r0.w, t0.w, -c0.x
     mul r0, r0, t0  // ::color<0,1,2,3>
     cmp r1, r1.w, c0.w, c0.z
     texkill r1
 
+<<<<<<< HEAD
 #line 20 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+=======
+#line 20 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     mad r1.xyz, c1, r0.w, -r0
     mad r0.xyz, t1.w, r1, r0  // ApplyFog::color<0,1,2>
     mov oC0, r0  // ::PSAlphaTestLtGt<0,1,2,3>
@@ -78,10 +86,17 @@ ret
 
 const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67,   3,  69, 
     176,  46,  18, 126,  71,  88, 
     168, 156,  30,  41, 255, 175, 
      92,  82,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67,  59, 131, 
+    211,  23,  88, 251, 213, 159, 
+    185,  53, 167, 232, 193, 183, 
+    108,  13,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     220,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     176,   3,   0,   0,  64,   5, 
@@ -106,6 +121,7 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
       0,   0,   8,   2,   0,   0, 
      40,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -131,6 +147,33 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGt[] =
      92,  67, 111, 109, 109, 111, 
     110,  46, 102, 120, 104,   0, 
      40,   0,   0,   0, 120,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  65, 108, 
+    112, 104,  97,  84, 101, 115, 
+    116,  69, 102, 102, 101,  99, 
+    116,  46, 102, 120,   0,  67, 
+     58,  92,  85, 115, 101, 114, 
+    115,  92, 100, 110, 103, 111, 
+    105, 110, 115,  92,  83, 111, 
+    117, 114,  99, 101,  92,  82, 
+    101, 112, 111, 115,  92,  68, 
+    110, 103, 111, 105, 110, 115, 
+     92,  68, 105, 114, 101,  99, 
+    116,  88,  84,  75,  92,  83, 
+    114,  99,  92,  83, 104,  97, 
+    100, 101, 114, 115,  92,  67, 
+    111, 109, 109, 111, 110,  46, 
+    102, 120, 104,   0, 171, 171, 
+     40,   0,   0,   0, 119,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0,   0,   0, 255, 255, 
     140,   2,   0,   0,   0,   0, 
     255, 255, 152,   2,   0,   0, 

@@ -39,7 +39,11 @@
     dcl t1.xy  // pixel<8,9>
     dcl_2d s0
 
+<<<<<<< HEAD
 #line 144 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
+=======
+#line 144 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     texld r0, t1, s0
     mul r1.w, r0.w, t0.w  // ::local4<0>
 
@@ -74,10 +78,17 @@ ret
 
 const BYTE DGSLUnlit_mainTxTk[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67,  87,  15, 
      47,  64,  79, 178, 227,  64, 
      46, 243,  87, 108, 126, 102, 
      37, 151,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67,  87, 201, 
+     22, 206,  88,  15, 127,  87, 
+    247,   0, 239,  27,  90, 177, 
+     14, 224,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     184,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     164,   3,   0,   0, 152,   4, 
@@ -100,6 +111,7 @@ const BYTE DGSLUnlit_mainTxTk[] =
       0,   0,  24,   2,   0,   0, 
      24,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -112,6 +124,20 @@ const BYTE DGSLUnlit_mainTxTk[] =
      71,  83,  76,  85, 110, 108, 
     105, 116,  46, 104, 108, 115, 
     108,   0,  40,   0,   0,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  68,  71, 
+     83,  76,  85, 110, 108, 105, 
+    116,  46, 104, 108, 115, 108, 
+      0, 171,  40,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0, 255, 255, 156,   2, 
       0,   0,   0,   0, 255, 255, 
     180,   2,   0,   0,   0,   0, 

@@ -39,7 +39,11 @@
     dcl t0  // pixel<4,5,6,7>
     dcl t2.xyz  // pixel<10,11,12>
 
+<<<<<<< HEAD
 #line 99 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLLambert.hlsl"
+=======
+#line 99 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLLambert.hlsl"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     nrm r0.xyz, t2  // ::worldNormal<0,1,2>
 
 #line 82
@@ -103,10 +107,17 @@ ret
 
 const BYTE DGSLLambert_main[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67,  14, 156, 
      93, 164, 205, 244,  36, 140, 
     190,   7,  34, 139, 182, 185, 
     126, 255,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 242, 187, 
+     56, 118,  74, 191, 158, 203, 
+    242,  78, 141,  60,   5,  52, 
+    199,  61,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       8,   9,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     116,   5,   0,   0, 232,   7, 
@@ -134,6 +145,7 @@ const BYTE DGSLLambert_main[] =
       7,   0,   0,   0,   8,   3, 
       0,   0, 252,   1,   0,   0, 
      67,  58,  92,  85, 115, 101, 
+<<<<<<< HEAD
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -146,6 +158,20 @@ const BYTE DGSLLambert_main[] =
      92,  68,  71,  83,  76,  76, 
      97, 109,  98, 101, 114, 116, 
      46, 104, 108, 115, 108,   0, 
+=======
+    114, 115,  92, 100, 110, 103, 
+    111, 105, 110, 115,  92,  83, 
+    111, 117, 114,  99, 101,  92, 
+     82, 101, 112, 111, 115,  92, 
+     68, 110, 103, 111, 105, 110, 
+    115,  92,  68, 105, 114, 101, 
+     99, 116,  88,  84,  75,  92, 
+     83, 114,  99,  92,  83, 104, 
+     97, 100, 101, 114, 115,  92, 
+     68,  71,  83,  76,  76,  97, 
+    109,  98, 101, 114, 116,  46, 
+    104, 108, 115, 108,   0, 171, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     171, 171,  40,   0,   0,   0, 
       0,   0, 255, 255, 200,   3, 
       0,   0,   0,   0, 255, 255, 

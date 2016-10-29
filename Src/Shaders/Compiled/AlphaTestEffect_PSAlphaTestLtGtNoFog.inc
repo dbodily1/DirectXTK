@@ -39,7 +39,11 @@
     dcl t1.xy  // pin<4,5>
     dcl_2d s0
 
+<<<<<<< HEAD
 #line 104 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+=======
+#line 104 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     texld r0, t1, s0
     mad r1.w, r0.w, t0.w, -c0.x
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -69,10 +73,17 @@ ret
 
 const BYTE AlphaTestEffect_PSAlphaTestLtGtNoFog[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67, 125,   5, 
     186,  50,  61, 255, 179,  75, 
     244,  88, 246, 174,  40, 196, 
     165, 195,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 169,  57, 
+     75,  86,  52, 117,  61,  57, 
+     30,  62, 107, 183, 130,  41, 
+     75,  11,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     148,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     220,   2,   0,   0,  16,   4, 
@@ -97,6 +108,7 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGtNoFog[] =
       0,   0, 124,   1,   0,   0, 
     196,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -109,6 +121,20 @@ const BYTE AlphaTestEffect_PSAlphaTestLtGtNoFog[] =
     108, 112, 104,  97,  84, 101, 
     115, 116,  69, 102, 102, 101, 
      99, 116,  46, 102, 120,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  65, 108, 
+    112, 104,  97,  84, 101, 115, 
+    116,  69, 102, 102, 101,  99, 
+    116,  46, 102, 120,   0, 171, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
      40,   0,   0,   0,   0,   0, 
     255, 255, 236,   1,   0,   0, 
       0,   0, 255, 255, 248,   1, 

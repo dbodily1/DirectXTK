@@ -1416,4 +1416,7 @@ bool SpriteBatch::AttachViewProjectionBuffer()
 {
 	return pImpl->AttachViewProjectionBuffer();
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update

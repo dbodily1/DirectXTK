@@ -56,7 +56,11 @@
     dcl_texcoord3 v3  // vertex<11,12,13,14>
     dcl_texcoord4 v4  // vertex<15,16>
 
+<<<<<<< HEAD
 #line 150 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLEffect.fx"
+=======
+#line 150 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLEffect.fx"
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     dp4 oPos.z, v0, c7  // ::mainVc<2>
     mul oT0, v3, c1  // ::mainVc<4,5,6,7>
     mad r0.xyz, v4.xyxw, c12.xxyw, c12.yyxw
@@ -133,10 +137,17 @@ ret
 
 const BYTE DGSLEffect_mainVc[] =
 {
+<<<<<<< HEAD
      68,  88,  66,  67,  91, 101, 
     221, 175, 122, 209, 240, 157, 
     103,  55, 177, 243,  74, 121, 
     207, 109,   1,   0,   0,   0, 
+=======
+     68,  88,  66,  67, 237, 106, 
+    210,  50, 184, 222, 124,  23, 
+     25, 132, 104, 190,  94, 115, 
+    232, 100,   1,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
     228,  10,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      64,   6,   0,   0,  68,   9, 
@@ -169,6 +180,7 @@ const BYTE DGSLEffect_mainVc[] =
       0,   0, 144,   3,   0,   0, 
      72,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
+<<<<<<< HEAD
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -181,6 +193,20 @@ const BYTE DGSLEffect_mainVc[] =
      71,  83,  76,  69, 102, 102, 
     101,  99, 116,  46, 102, 120, 
       0, 171,  40,   0,   0,   0, 
+=======
+     92, 100, 110, 103, 111, 105, 
+    110, 115,  92,  83, 111, 117, 
+    114,  99, 101,  92,  82, 101, 
+    112, 111, 115,  92,  68, 110, 
+    103, 111, 105, 110, 115,  92, 
+     68, 105, 114, 101,  99, 116, 
+     88,  84,  75,  92,  83, 114, 
+     99,  92,  83, 104,  97, 100, 
+    101, 114, 115,  92,  68,  71, 
+     83,  76,  69, 102, 102, 101, 
+     99, 116,  46, 102, 120,   0, 
+    171, 171,  40,   0,   0,   0, 
+>>>>>>> Recompiled shaders, added new ones based on updated Parent update
       0,   0, 255, 255,  20,   4, 
       0,   0,   0,   0, 255, 255, 
      44,   4,   0,   0,   0,   0, 
