@@ -23,10 +23,14 @@
     dcl t0  // pin<0,1,2,3>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 507 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
 =======
 #line 507 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\BasicEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 507 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+>>>>>>> Fixed merge issues
     mov oC0, t0  // ::PSBasicNoFog<0,1,2,3>
 
 // approximately 1 instruction slot used
@@ -41,16 +45,22 @@ ret
 const BYTE BasicEffect_PSBasicNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 181, 141, 
      52, 249, 104, 203,  93,  96, 
     195, 252,  22,  12,  12, 108, 
     165,  17,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67,  86, 149, 
      84, 157,  39, 178, 214,   0, 
       6, 192, 234,  89, 191, 227, 
     230, 173,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     108,   2,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     200,   1,   0,   0,   8,   2, 
@@ -73,6 +83,9 @@ const BYTE BasicEffect_PSBasicNoFog[] =
       0,   0, 136,   0,   0,   0, 
      67,  58,  92,  85, 115, 101, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -85,6 +98,7 @@ const BYTE BasicEffect_PSBasicNoFog[] =
      92,  66,  97, 115, 105,  99, 
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  40,   0, 
+<<<<<<< HEAD
 =======
     114, 115,  92, 100, 110, 103, 
     111, 105, 110, 115,  92,  83, 
@@ -99,6 +113,8 @@ const BYTE BasicEffect_PSBasicNoFog[] =
     102, 102, 101,  99, 116,  46, 
     102, 120,   0, 171,  40,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0,   0,   0, 255, 255, 
      80,   1,   0,   0, 251,   1, 
       0,   0,  92,   1,   0,   0, 

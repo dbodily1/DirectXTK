@@ -44,6 +44,7 @@
     dcl_texcoord2 v2  // vin<6,7,8,9>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
     dp4 oPos.z, v0, c4  // ::VSBasicTxVcNoFog<8>
 
@@ -53,22 +54,33 @@
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+=======
+#line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 oPos.z, v0, c4  // ::VSBasicTxVcNoFog<8>
 
-#line 147 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\BasicEffect.fx"
+#line 147 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     mul oT0, v2, c1  // ::VSBasicTxVcNoFog<0,1,2,3>
 
+<<<<<<< HEAD
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 r0.x, v0, c2  // ::vout<0>
     dp4 r0.y, v0, c3  // ::vout<1>
     dp4 r0.z, v0, c5  // ::vout<3>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 139 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
 =======
 #line 139 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\BasicEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 139 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+>>>>>>> Fixed merge issues
     mad oPos.xy, r0.z, c0, r0  // ::VSBasicTxVcNoFog<6,7>
     mov oPos.w, r0.z  // ::VSBasicTxVcNoFog<9>
 
@@ -97,16 +109,22 @@ ret
 const BYTE BasicEffect_VSBasicTxVcNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67,  42,  91, 
      90, 219,  83, 241, 224, 245, 
     249,  57, 243, 195, 237, 152, 
     218, 159,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 140,  32, 
     192, 154, 175, 209, 245, 200, 
     220, 128, 110, 136,  49,  62, 
     162, 172,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     100,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      88,   4,   0,   0, 124,   5, 
@@ -134,6 +152,9 @@ const BYTE BasicEffect_VSBasicTxVcNoFog[] =
      28,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -159,6 +180,7 @@ const BYTE BasicEffect_VSBasicTxVcNoFog[] =
     102, 101,  99, 116,  46, 102, 
     120,   0,  40,   0,   0,   0, 
     112,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -186,6 +208,8 @@ const BYTE BasicEffect_VSBasicTxVcNoFog[] =
     171, 171,  40,   0,   0,   0, 
     111,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255,  60,   3,   0,   0, 
       0,   0, 255, 255,  72,   3, 
       0,   0,   0,   0, 255, 255, 

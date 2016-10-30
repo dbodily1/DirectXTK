@@ -45,10 +45,14 @@
     dcl t4.xyz  // pixel<16,17,18>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 104 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
 =======
 #line 104 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLPhong.hlsl"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 104 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DGSLPhong.hlsl"
+>>>>>>> Fixed merge issues
     mov r0.xyz, c1  // MaterialVars::MaterialSpecular<0,1,2>
     mul r1.xyz, r0, c4
     mul r2.xyz, r0, c5
@@ -184,6 +188,7 @@ ret
 const BYTE DGSLPhong_main[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 145, 228, 
      63, 219, 246, 199,   6, 222, 
     145, 182, 226, 253, 100,   9, 
@@ -194,6 +199,12 @@ const BYTE DGSLPhong_main[] =
      81, 139, 231, 199,  57,  48, 
       6, 179,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67, 244,  31, 
+    232, 143, 134, 232, 208, 171, 
+    214, 231, 157, 191, 106, 221, 
+    172, 232,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
       8,  17,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     180,   9,   0,   0, 232,  15, 
@@ -228,18 +239,27 @@ const BYTE DGSLPhong_main[] =
       0,   0,  36,   3,   0,   0, 
      67,  58,  92,  85, 115, 101, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
      68,  51,  68,  49,  49,  32, 
      80, 114, 111, 106, 101,  99, 
+<<<<<<< HEAD
     116, 115,  92,  68, 105, 114, 
     101,  99, 116,  88,  84,  75, 
+=======
+    116, 115,  92, 100, 105, 114, 
+    101,  99, 116, 120, 116, 107, 
+>>>>>>> Fixed merge issues
      92,  83, 114,  99,  92,  83, 
     104,  97, 100, 101, 114, 115, 
      92,  68,  71,  83,  76,  80, 
     104, 111, 110, 103,  46, 104, 
     108, 115, 108,   0,  40,   0, 
+<<<<<<< HEAD
 =======
     114, 115,  92, 100, 110, 103, 
     111, 105, 110, 115,  92,  83, 
@@ -254,6 +274,8 @@ const BYTE DGSLPhong_main[] =
     111, 110, 103,  46, 104, 108, 
     115, 108,   0, 171,  40,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0,   0,   0, 255, 255, 
      72,   6,   0,   0,   0,   0, 
     255, 255,  96,   6,   0,   0, 

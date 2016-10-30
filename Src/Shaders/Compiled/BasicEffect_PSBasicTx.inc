@@ -42,6 +42,7 @@
     dcl_2d s0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 514 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     texld r0, t2, s0
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -54,6 +55,13 @@
 
 #line 20 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 514 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+    texld r0, t2, s0
+    mul r0, r0, t0  // ::color<0,1,2,3>
+
+#line 20 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mad r1.xyz, c0, r0.w, -r0
     mad r0.xyz, t1.w, r1, r0  // ApplyFog::color<0,1,2>
     mov oC0, r0  // ::PSBasicTx<0,1,2,3>
@@ -80,16 +88,22 @@ ret
 const BYTE BasicEffect_PSBasicTx[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 249,   1, 
     249,  65, 121, 225,  61, 207, 
      49,  20,  67,  92, 169, 182, 
      37, 234,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 188, 147, 
     140, 118, 123, 166, 153, 246, 
      57, 163, 222, 180, 171, 232, 
      41, 231,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      24,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      96,   3,   0,   0, 124,   4, 
@@ -115,6 +129,9 @@ const BYTE BasicEffect_PSBasicTx[] =
      12,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -140,6 +157,7 @@ const BYTE BasicEffect_PSBasicTx[] =
     109, 111, 110,  46, 102, 120, 
     104,   0,  40,   0,   0,   0, 
     116,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -167,6 +185,8 @@ const BYTE BasicEffect_PSBasicTx[] =
     171, 171,  40,   0,   0,   0, 
     115,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255, 108,   2,   0,   0, 
       0,   0, 255, 255, 120,   2, 
       0,   0,   0,   0, 255, 255, 

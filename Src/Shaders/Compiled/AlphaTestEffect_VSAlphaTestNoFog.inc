@@ -42,15 +42,20 @@
     dcl_texcoord1 v1  // vin<4,5>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 43 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 oPos.z, v0, c4  // ::VSAlphaTestNoFog<8>
     dp4 r0.x, v0, c2  // ::vout<0>
     dp4 r0.y, v0, c3  // ::vout<1>
     dp4 r0.z, v0, c5  // ::vout<3>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #line 45 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSAlphaTestNoFog<6,7>
@@ -62,14 +67,21 @@
 #line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
 =======
 #line 45 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
+=======
+#line 45 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Fixed merge issues
     mad oPos.xy, r0.z, c0, r0  // ::VSAlphaTestNoFog<6,7>
     mov oPos.w, r0.z  // ::VSAlphaTestNoFog<9>
 
-#line 50 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+#line 44 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\Common.fxh"
     mov oT0, c1  // ::VSAlphaTestNoFog<0,1,2,3>
 
+<<<<<<< HEAD
 #line 52 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Fixed merge issues
     mov oT1.xy, v1  // ::VSAlphaTestNoFog<4,5>
 
 // approximately 8 instruction slots used
@@ -93,6 +105,7 @@ ret
 const BYTE AlphaTestEffect_VSAlphaTestNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 186, 231, 
      94, 126, 212, 151,   1,  66, 
      13, 251, 222,  21, 253, 183, 
@@ -103,6 +116,12 @@ const BYTE AlphaTestEffect_VSAlphaTestNoFog[] =
     148, 204, 142, 243,  37,  59, 
      21, 115,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67, 207, 148, 
+    219, 221, 254, 173, 224,  76, 
+    125, 101,   8,  38, 100, 128, 
+    190, 218,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
       8,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      44,   4,   0,   0,  60,   5, 
@@ -130,13 +149,21 @@ const BYTE AlphaTestEffect_VSAlphaTestNoFog[] =
      24,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+>>>>>>> Fixed merge issues
     114,  99,  92,  83, 104,  97, 
     100, 101, 114, 115,  92,  67, 
     111, 109, 109, 111, 110,  46, 
@@ -147,14 +174,20 @@ const BYTE AlphaTestEffect_VSAlphaTestNoFog[] =
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+>>>>>>> Fixed merge issues
     114,  99,  92,  83, 104,  97, 
     100, 101, 114, 115,  92,  65, 
     108, 112, 104,  97,  84, 101, 
     115, 116,  69, 102, 102, 101, 
      99, 116,  46, 102, 120,   0, 
      40,   0,   0,   0, 112,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -182,18 +215,20 @@ const BYTE AlphaTestEffect_VSAlphaTestNoFog[] =
      46, 102, 120,   0, 171, 171, 
      40,   0,   0,   0, 111,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0,   0,   0, 255, 255, 
      32,   3,   0,   0,   0,   0, 
     255, 255,  44,   3,   0,   0, 
-     49,   0,   0,   0,  56,   3, 
-      0,   0,  49,   0,   0,   0, 
-     72,   3,   0,   0,  49,   0, 
+     43,   0,   0,   0,  56,   3, 
+      0,   0,  43,   0,   0,   0, 
+     72,   3,   0,   0,  43,   0, 
       0,   0,  88,   3,   0,   0, 
-     49,   0,   0,   0, 104,   3, 
+     43,   0,   0,   0, 104,   3, 
       0,   0,  45,   0,   1,   0, 
     120,   3,   0,   0,  45,   0, 
       1,   0, 140,   3,   0,   0, 
-     50,   0,   0,   0, 152,   3, 
+     44,   0,   0,   0, 152,   3, 
       0,   0,  52,   0,   1,   0, 
     164,   3,   0,   0,  86,  83, 
      65, 108, 112, 104,  97,  84, 

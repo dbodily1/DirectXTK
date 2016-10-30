@@ -42,6 +42,7 @@
     dcl_2d s0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 555 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     texld r0, t2, s0
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -54,6 +55,13 @@
 
 #line 26 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 555 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+    texld r0, t2, s0
+    mul r0, r0, t0  // ::color<0,1,2,3>
+
+#line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mad r1.xyz, t1, r0.w, r0  // AddSpecular::color<0,1,2>
 
 #line 20
@@ -84,16 +92,22 @@ ret
 const BYTE BasicEffect_PSBasicVertexLightingTx[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 144,  91, 
      71,  86, 138,  73, 249, 111, 
     252,  41,  40,  95, 152, 204, 
      81, 168,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 194,  73, 
     234,  19,  13,  55, 246,  65, 
      69, 216,  72, 212,  65,   7, 
      17, 253,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     144,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     180,   3,   0,   0, 244,   4, 
@@ -119,6 +133,9 @@ const BYTE BasicEffect_PSBasicVertexLightingTx[] =
      20,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -144,6 +161,7 @@ const BYTE BasicEffect_PSBasicVertexLightingTx[] =
     109, 111, 110,  46, 102, 120, 
     104,   0,  40,   0,   0,   0, 
     116,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -171,6 +189,8 @@ const BYTE BasicEffect_PSBasicVertexLightingTx[] =
     171, 171,  40,   0,   0,   0, 
     115,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255, 172,   2,   0,   0, 
       0,   0, 255, 255, 184,   2, 
       0,   0,   0,   0, 255, 255, 

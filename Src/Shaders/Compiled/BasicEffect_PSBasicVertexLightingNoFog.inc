@@ -25,10 +25,14 @@
     dcl t1  // pin<4,5,6,7>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 26 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mov r0, t0  // pin<0,1,2,3>
     mad r0.xyz, t1, r0.w, r0  // AddSpecular::color<0,1,2>
     mov r0.w, t0.w
@@ -48,16 +52,22 @@ ret
 const BYTE BasicEffect_PSBasicVertexLightingNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 130,  92, 
     190, 251,  92, 163, 242, 235, 
      36,  95, 152,  62, 166,   5, 
      73, 116,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 134, 137, 
     207, 103,  50, 146, 219,   5, 
      44, 167, 238, 144, 158,  85, 
     152, 153,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     116,   3,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     136,   2,   0,   0, 248,   2, 
@@ -80,6 +90,9 @@ const BYTE BasicEffect_PSBasicVertexLightingNoFog[] =
       0,   0, 164,   0,   0,   0, 
      67,  58,  92,  85, 115, 101, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -91,6 +104,7 @@ const BYTE BasicEffect_PSBasicVertexLightingNoFog[] =
     104,  97, 100, 101, 114, 115, 
      92,  67, 111, 109, 109, 111, 
     110,  46, 102, 120, 104,   0, 
+<<<<<<< HEAD
 =======
     114, 115,  92, 100, 110, 103, 
     111, 105, 110, 115,  92,  83, 
@@ -104,6 +118,8 @@ const BYTE BasicEffect_PSBasicVertexLightingNoFog[] =
      67, 111, 109, 109, 111, 110, 
      46, 102, 120, 104,   0, 171, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      40,   0,   0,   0,   0,   0, 
     255, 255, 216,   1,   0,   0, 
       0,   0, 255, 255, 228,   1, 

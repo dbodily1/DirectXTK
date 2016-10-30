@@ -32,10 +32,14 @@
     dcl t1  // pin<4,5,6,7>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 26 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mov r0, t0  // pin<0,1,2,3>
     mad r0.xyz, t1, r0.w, r0  // AddSpecular::color<0,1,2>
 
@@ -63,16 +67,22 @@ ret
 const BYTE BasicEffect_PSBasicVertexLighting[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67,  87,   2, 
     149,  25, 198,  64, 161, 184, 
      94, 133,   3,  23, 104,  88, 
     205, 215,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 144,  60, 
     111,   5,  23, 210,  67,  51, 
      25, 155, 125, 146, 121,  23, 
      44, 158,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      68,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     240,   2,   0,   0, 200,   3, 
@@ -97,6 +107,9 @@ const BYTE BasicEffect_PSBasicVertexLighting[] =
       0,   0, 180,   0,   0,   0, 
      67,  58,  92,  85, 115, 101, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
@@ -108,6 +121,7 @@ const BYTE BasicEffect_PSBasicVertexLighting[] =
     104,  97, 100, 101, 114, 115, 
      92,  67, 111, 109, 109, 111, 
     110,  46, 102, 120, 104,   0, 
+<<<<<<< HEAD
 =======
     114, 115,  92, 100, 110, 103, 
     111, 105, 110, 115,  92,  83, 
@@ -121,6 +135,8 @@ const BYTE BasicEffect_PSBasicVertexLighting[] =
      67, 111, 109, 109, 111, 110, 
      46, 102, 120, 104,   0, 171, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      40,   0,   0,   0,   0,   0, 
     255, 255,  12,   2,   0,   0, 
       0,   0, 255, 255,  24,   2, 

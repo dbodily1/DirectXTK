@@ -62,10 +62,14 @@
     dcl_texcoord6 v6  // vertex<21,22,23,24>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 112 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLEffect.fx"
 =======
 #line 112 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 112 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DGSLEffect.fx"
+>>>>>>> Fixed merge issues
     mul r0.xy, v5, c228.x
     mova a0.xy, r0.yxzw
     mul r0, v6.y, c0[a0.x]
@@ -193,6 +197,7 @@ ret
 const BYTE DGSLEffect_main2BonesVc[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 237, 232, 
     209,  56, 101,  64,  47,  53, 
      58, 192,  25, 237, 196, 134, 
@@ -203,6 +208,12 @@ const BYTE DGSLEffect_main2BonesVc[] =
      21,  81,  83,  73,  49,  60, 
     175, 120,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67,  61, 159, 
+     14, 162,  24,  12, 126, 144, 
+    160,  68, 196,  69, 144, 199, 
+    119,  62,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
     196,  16,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     116,   9,   0,   0, 220,  14, 
@@ -238,18 +249,27 @@ const BYTE DGSLEffect_main2BonesVc[] =
     232,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+>>>>>>> Fixed merge issues
     114,  99,  92,  83, 104,  97, 
     100, 101, 114, 115,  92,  68, 
      71,  83,  76,  69, 102, 102, 
     101,  99, 116,  46, 102, 120, 
       0, 171,  40,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -264,6 +284,8 @@ const BYTE DGSLEffect_main2BonesVc[] =
      99, 116,  46, 102, 120,   0, 
     171, 171,  40,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0, 255, 255, 232,   5, 
       0,   0,   0,   0, 255, 255, 
       0,   6,   0,   0,   0,   0, 

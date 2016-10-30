@@ -55,10 +55,14 @@
     dcl_texcoord3 v3  // vertex<11,12>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 129 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLEffect.fx"
 =======
 #line 129 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 129 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DGSLEffect.fx"
+>>>>>>> Fixed merge issues
     dp4 oPos.z, v0, c7  // ::main<2>
     mad r0.xyz, v3.xyxw, c12.xxyw, c12.yyxw
     dp3 oT1.x, r0, c9.xyww  // ::main<8>
@@ -137,6 +141,7 @@ ret
 const BYTE DGSLEffect_main[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 152, 152, 
     187,  89,  67,  39, 184, 153, 
     197,  13,  49, 201, 235, 255, 
@@ -147,6 +152,12 @@ const BYTE DGSLEffect_main[] =
     155,  62, 228,  72, 119, 251, 
     144,  50,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67,  88,  55, 
+    135, 246,  26,  37,  88, 216, 
+    111,  47, 230, 161, 204,   9, 
+      2, 153,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
     124,  10,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      12,   6,   0,   0, 252,   8, 
@@ -180,18 +191,27 @@ const BYTE DGSLEffect_main[] =
      64,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+>>>>>>> Fixed merge issues
     114,  99,  92,  83, 104,  97, 
     100, 101, 114, 115,  92,  68, 
      71,  83,  76,  69, 102, 102, 
     101,  99, 116,  46, 102, 120, 
       0, 171,  40,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -206,6 +226,8 @@ const BYTE DGSLEffect_main[] =
      99, 116,  46, 102, 120,   0, 
     171, 171,  40,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0, 255, 255, 240,   3, 
       0,   0,   0,   0, 255, 255, 
       8,   4,   0,   0,   0,   0, 

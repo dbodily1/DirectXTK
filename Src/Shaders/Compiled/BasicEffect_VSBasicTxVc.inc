@@ -47,10 +47,14 @@
     dcl_texcoord2 v2  // vin<6,7,8,9>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 oPos.z, v0, c5  // ::VSBasicTxVc<12>
 
 #line 14
@@ -58,6 +62,7 @@
     max r0.x, r0.x, c7.x
     min oT1.w, r0.x, c7.y  // ::VSBasicTxVc<7>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #line 132 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     mul oT0, v2, c1  // ::VSBasicTxVc<0,1,2,3>
@@ -69,10 +74,17 @@
 
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 132 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+    mul oT0, v2, c1  // ::VSBasicTxVc<0,1,2,3>
+
+#line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 r0.x, v0, c3  // ::vout<0>
     dp4 r0.y, v0, c4  // ::vout<1>
     dp4 r0.z, v0, c6  // ::vout<3>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #line 124 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSBasicTxVc<10,11>
@@ -84,14 +96,21 @@
 #line 131 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
 =======
 #line 124 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\BasicEffect.fx"
+=======
+#line 124 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+>>>>>>> Fixed merge issues
     mad oPos.xy, r0.z, c0, r0  // ::VSBasicTxVc<10,11>
     mov oPos.w, r0.z  // ::VSBasicTxVc<13>
 
-#line 51 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
+#line 51 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
     mov oT1.xyz, c7.x  // ::VSBasicTxVc<4,5,6>
 
+<<<<<<< HEAD
 #line 131 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\BasicEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 131 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+>>>>>>> Fixed merge issues
     mov oT2.xy, v1  // ::VSBasicTxVc<8,9>
 
 // approximately 12 instruction slots used
@@ -119,16 +138,22 @@ ret
 const BYTE BasicEffect_VSBasicTxVc[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67,  71,  59, 
     130, 218,  99, 178, 102, 122, 
     227, 175,  16,  69,  74,  53, 
      72,   2,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 127, 186, 
     123, 239, 235,   7,  32, 101, 
     107, 206, 229, 231,  81, 146, 
      18, 248,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     100,   7,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     244,   4,   0,   0, 100,   6, 
@@ -158,6 +183,9 @@ const BYTE BasicEffect_VSBasicTxVc[] =
      68,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -183,6 +211,7 @@ const BYTE BasicEffect_VSBasicTxVc[] =
     102, 101,  99, 116,  46, 102, 
     120,   0,  40,   0,   0,   0, 
     112,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -210,6 +239,8 @@ const BYTE BasicEffect_VSBasicTxVc[] =
     171, 171,  40,   0,   0,   0, 
     111,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255, 120,   3,   0,   0, 
       0,   0, 255, 255, 144,   3, 
       0,   0,   0,   0, 255, 255, 

@@ -35,6 +35,7 @@
     dcl_2d s0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 567 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     texld r0, t2, s0
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -47,6 +48,13 @@
 
 #line 26 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 567 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+    texld r0, t2, s0
+    mul r0, r0, t0  // ::color<0,1,2,3>
+
+#line 26 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mad r0.xyz, t1, r0.w, r0  // AddSpecular::color<0,1,2>
     mov oC0, r0  // ::PSBasicVertexLightingTxNoFog<0,1,2,3>
 
@@ -70,16 +78,22 @@ ret
 const BYTE BasicEffect_PSBasicVertexLightingTxNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 144,  52, 
       8, 138,  36, 226, 252, 120, 
     221,  28,  14, 241, 161,   5, 
      36, 235,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 236,  44, 
      33, 123, 130, 213, 157,  43, 
     163,   7, 180, 104,  41, 253, 
     154,  62,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     204,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      80,   3,   0,   0,  48,   4, 
@@ -103,6 +117,9 @@ const BYTE BasicEffect_PSBasicVertexLightingTxNoFog[] =
       4,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -128,6 +145,7 @@ const BYTE BasicEffect_PSBasicVertexLightingTxNoFog[] =
     109, 111, 110,  46, 102, 120, 
     104,   0,  40,   0,   0,   0, 
     116,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -155,6 +173,8 @@ const BYTE BasicEffect_PSBasicVertexLightingTxNoFog[] =
     171, 171,  40,   0,   0,   0, 
     115,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255, 124,   2,   0,   0, 
       0,   0, 255, 255, 136,   2, 
       0,   0,   0,   0, 255, 255, 

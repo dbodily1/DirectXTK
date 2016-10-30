@@ -49,10 +49,14 @@
     dcl_texcoord4 v4  // vin<13,14,15,16>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 =======
 #line 52 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mul r0.x, v3.x, c243.x
     mova a0.x, r0.x
     mul r0, v4.x, c26[a0.x]  // ::skinning<0,3,6,9>
@@ -72,10 +76,14 @@
     dp4 r0.z, v0, r3  // Skin::vin<2>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 59 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
 =======
 #line 59 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 59 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
+>>>>>>> Fixed merge issues
     dp3 r2.x, r1, c19
     dp3 r2.y, r1, c20
     dp3 r2.z, r1, c21
@@ -148,23 +156,32 @@
     dp4 oPos.z, r0, c24  // ::VSSkinnedVertexLightingOneBone<12>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 14 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 14 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 14 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 r1.x, r0, c14
     max r1.x, r1.x, c243.y
     min oT1.w, r1.x, c243.z  // ::VSSkinnedVertexLightingOneBone<7>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 63 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
 =======
 #line 63 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 63 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
+>>>>>>> Fixed merge issues
     dp4 r1.x, r0, c22  // ::vout<0>
     dp4 r1.y, r0, c23  // ::vout<1>
     dp4 r0.x, r0, c25  // ::vout<3>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #line 61 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
     mad oPos.xy, r0.x, c242, r1  // ::VSSkinnedVertexLightingOneBone<10,11>
@@ -176,14 +193,21 @@
 #line 65 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 =======
 #line 61 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+=======
+#line 61 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mad oPos.xy, r0.x, c242, r1  // ::VSSkinnedVertexLightingOneBone<10,11>
     mov oPos.w, r0.x  // ::VSSkinnedVertexLightingOneBone<13>
 
-#line 46 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
+#line 46 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
     mov oT0.w, c0.w  // ::VSSkinnedVertexLightingOneBone<3>
 
+<<<<<<< HEAD
 #line 65 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 65 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mov oT2.xy, v2  // ::VSSkinnedVertexLightingOneBone<8,9>
 
 // approximately 75 instruction slots used
@@ -271,16 +295,22 @@ ret
 const BYTE SkinnedEffect_VSSkinnedVertexLightingOneBone[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 244, 194, 
     156, 214, 140, 168, 133,  63, 
      56, 231, 208, 203,  69,  53, 
     138, 235,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67,  57, 183, 
     140, 127,  98,  14, 163, 151, 
     191, 127, 186,  38, 215, 116, 
     120, 205,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     120,  23,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     168,  13,   0,   0,  44,  22, 
@@ -306,6 +336,9 @@ const BYTE SkinnedEffect_VSSkinnedVertexLightingOneBone[] =
     188,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -318,6 +351,7 @@ const BYTE SkinnedEffect_VSSkinnedVertexLightingOneBone[] =
     107, 105, 110, 110, 101, 100, 
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
+<<<<<<< HEAD
      92,  85, 115, 101, 114, 115, 
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
@@ -384,6 +418,34 @@ const BYTE SkinnedEffect_VSSkinnedVertexLightingOneBone[] =
      40,   0,   0,   0, 117,   0, 
       0,   0, 190,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     92,  85, 115, 101, 114, 115, 
+     92,  67, 104, 117,  99, 107, 
+     87,  92,  68, 101, 115, 107, 
+    116, 111, 112,  92,  68,  51, 
+     68,  49,  49,  32,  80, 114, 
+    111, 106, 101,  99, 116, 115, 
+     92,  68, 105, 114, 101,  99, 
+    116,  88,  84,  75,  92,  83, 
+    114,  99,  92,  83, 104,  97, 
+    100, 101, 114, 115,  92,  76, 
+    105, 103, 104, 116, 105, 110, 
+    103,  46, 102, 120, 104,   0, 
+     67,  58,  92,  85, 115, 101, 
+    114, 115,  92,  67, 104, 117, 
+     99, 107,  87,  92,  68, 101, 
+    115, 107, 116, 111, 112,  92, 
+     68,  51,  68,  49,  49,  32, 
+     80, 114, 111, 106, 101,  99, 
+    116, 115,  92,  68, 105, 114, 
+    101,  99, 116,  88,  84,  75, 
+     92,  83, 114,  99,  92,  83, 
+    104,  97, 100, 101, 114, 115, 
+     92,  67, 111, 109, 109, 111, 
+    110,  46, 102, 120, 104,   0, 
+     40,   0,   0,   0, 118,   0, 
+      0,   0, 192,   0,   0,   0, 
+>>>>>>> Fixed merge issues
       0,   0, 255, 255, 244,   8, 
       0,   0,   0,   0, 255, 255, 
      12,   9,   0,   0,   0,   0, 

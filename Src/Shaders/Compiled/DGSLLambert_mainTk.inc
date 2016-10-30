@@ -41,10 +41,14 @@
     dcl t2.xyz  // pixel<10,11,12>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 130 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLLambert.hlsl"
 =======
 #line 130 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLLambert.hlsl"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 130 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DGSLLambert.hlsl"
+>>>>>>> Fixed merge issues
     mul r0.w, t0.w, t0.w
     cmp r0, -r0.w, c10.x, c10.y
     texkill r0
@@ -120,6 +124,7 @@ ret
 const BYTE DGSLLambert_mainTk[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67,  88, 244, 
      65,  30,  50, 151, 103, 242, 
     190, 198, 147, 224, 211,  93, 
@@ -130,6 +135,12 @@ const BYTE DGSLLambert_mainTk[] =
      41,  29, 230, 198,   7,  29, 
     230, 128,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67, 224, 209, 
+     82, 146,  35, 117,  69, 166, 
+     86,  60, 159, 241,  26, 196, 
+    127,  63,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
     148,   9,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     216,   5,   0,   0, 116,   8, 
@@ -158,18 +169,27 @@ const BYTE DGSLLambert_mainTk[] =
       0,   0,  28,   2,   0,   0, 
      67,  58,  92,  85, 115, 101, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     114, 115,  92,  67, 104, 117, 
      99, 107,  87,  92,  68, 101, 
     115, 107, 116, 111, 112,  92, 
      68,  51,  68,  49,  49,  32, 
      80, 114, 111, 106, 101,  99, 
+<<<<<<< HEAD
     116, 115,  92,  68, 105, 114, 
     101,  99, 116,  88,  84,  75, 
+=======
+    116, 115,  92, 100, 105, 114, 
+    101,  99, 116, 120, 116, 107, 
+>>>>>>> Fixed merge issues
      92,  83, 114,  99,  92,  83, 
     104,  97, 100, 101, 114, 115, 
      92,  68,  71,  83,  76,  76, 
      97, 109,  98, 101, 114, 116, 
      46, 104, 108, 115, 108,   0, 
+<<<<<<< HEAD
 =======
     114, 115,  92, 100, 110, 103, 
     111, 105, 110, 115,  92,  83, 
@@ -184,6 +204,8 @@ const BYTE DGSLLambert_mainTk[] =
     109,  98, 101, 114, 116,  46, 
     104, 108, 115, 108,   0, 171, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     171, 171,  40,   0,   0,   0, 
       0,   0, 255, 255, 232,   3, 
       0,   0,   0,   0, 255, 255, 

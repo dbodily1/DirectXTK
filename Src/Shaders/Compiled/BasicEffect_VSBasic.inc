@@ -42,10 +42,14 @@
     dcl_texcoord v0  // vin<0,1,2,3>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 49 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 49 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 oPos.z, v0, c5  // ::VSBasic<10>
 
 #line 14
@@ -59,6 +63,7 @@
     dp4 r0.z, v0, c6  // ::vout<3>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 44 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
     mad oPos.xy, r0.z, c0, r0  // ::VSBasic<8,9>
     mov oPos.w, r0.z  // ::VSBasic<11>
@@ -71,6 +76,13 @@
 
 #line 50 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 44 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\BasicEffect.fx"
+    mad oPos.xy, r0.z, c0, r0  // ::VSBasic<8,9>
+    mov oPos.w, r0.z  // ::VSBasic<11>
+
+#line 50 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mov oT0, c1  // ::VSBasic<0,1,2,3>
     mov oT1.xyz, c7.x  // ::VSBasic<4,5,6>
 
@@ -95,16 +107,22 @@ ret
 const BYTE BasicEffect_VSBasic[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 187,  46, 
     150, 222,   6,  93, 199,   6, 
     161,  69,  70,  59, 161, 222, 
      52,  92,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 234, 223, 
     233, 108,  18,  77,  74, 160, 
      24,  13,  98, 138,  23, 180, 
      85,  46,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      36,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      84,   4,   0,   0, 132,   5, 
@@ -134,6 +152,9 @@ const BYTE BasicEffect_VSBasic[] =
      44,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -159,6 +180,7 @@ const BYTE BasicEffect_VSBasic[] =
     102, 101,  99, 116,  46, 102, 
     120,   0,  40,   0,   0,   0, 
     112,   0,   0,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -186,6 +208,8 @@ const BYTE BasicEffect_VSBasic[] =
     171, 171,  40,   0,   0,   0, 
     111,   0,   0,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     255, 255,   0,   3,   0,   0, 
       0,   0, 255, 255,  24,   3, 
       0,   0,  49,   0,   0,   0, 

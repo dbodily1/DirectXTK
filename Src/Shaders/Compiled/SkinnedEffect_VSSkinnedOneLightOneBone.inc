@@ -49,10 +49,14 @@
     dcl_texcoord4 v4  // vin<13,14,15,16>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 =======
 #line 52 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 52 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mul r0.x, v3.x, c243.x
     mova a0.x, r0.x
     mul r0, v4.x, c26[a0.x]  // ::skinning<0,3,6,9>
@@ -72,10 +76,14 @@
     dp4 r0.z, v0, r3  // Skin::vin<2>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 59 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
 =======
 #line 59 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 59 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
+>>>>>>> Fixed merge issues
     dp3 r2.x, r1, c19
     dp3 r2.y, r1, c20
     dp3 r2.z, r1, c21
@@ -122,23 +130,32 @@
     dp4 oPos.z, r0, c24  // ::VSSkinnedOneLightOneBone<12>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 14 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 14 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 14 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     dp4 r1.x, r0, c14
     max r1.x, r1.x, c243.y
     min oT1.w, r1.x, c243.z  // ::VSSkinnedOneLightOneBone<7>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 63 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
 =======
 #line 63 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 63 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
+>>>>>>> Fixed merge issues
     dp4 r1.x, r0, c22  // ::vout<0>
     dp4 r1.y, r0, c23  // ::vout<1>
     dp4 r0.x, r0, c25  // ::vout<3>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 #line 157 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
     mad oPos.xy, r0.x, c242, r1  // ::VSSkinnedOneLightOneBone<10,11>
@@ -150,14 +167,21 @@
 #line 161 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 =======
 #line 157 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+=======
+#line 157 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mad oPos.xy, r0.x, c242, r1  // ::VSSkinnedOneLightOneBone<10,11>
     mov oPos.w, r0.x  // ::VSSkinnedOneLightOneBone<13>
 
-#line 46 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Lighting.fxh"
+#line 46 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Lighting.fxh"
     mov oT0.w, c0.w  // ::VSSkinnedOneLightOneBone<3>
 
+<<<<<<< HEAD
 #line 161 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\SkinnedEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 161 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\SkinnedEffect.fx"
+>>>>>>> Fixed merge issues
     mov oT2.xy, v2  // ::VSSkinnedOneLightOneBone<8,9>
 
 // approximately 55 instruction slots used
@@ -229,16 +253,22 @@ ret
 const BYTE SkinnedEffect_VSSkinnedOneLightOneBone[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      68,  88,  66,  67, 166,  61, 
     169,  58,  77,  84, 135, 112, 
     229,  71, 238, 193,  25,   3, 
     190, 228,   1,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      68,  88,  66,  67, 194,  69, 
      97,  30, 226, 134, 198,  87, 
     191, 127, 208,  12,   4,  16, 
     181, 167,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
      88,  19,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     188,  11,   0,   0,  12,  18, 
@@ -264,6 +294,9 @@ const BYTE SkinnedEffect_VSSkinnedOneLightOneBone[] =
      44,   3,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
@@ -276,6 +309,7 @@ const BYTE SkinnedEffect_VSSkinnedOneLightOneBone[] =
     107, 105, 110, 110, 101, 100, 
      69, 102, 102, 101,  99, 116, 
      46, 102, 120,   0,  67,  58, 
+<<<<<<< HEAD
      92,  85, 115, 101, 114, 115, 
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
@@ -342,6 +376,34 @@ const BYTE SkinnedEffect_VSSkinnedOneLightOneBone[] =
      40,   0,   0,   0, 117,   0, 
       0,   0, 190,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     92,  85, 115, 101, 114, 115, 
+     92,  67, 104, 117,  99, 107, 
+     87,  92,  68, 101, 115, 107, 
+    116, 111, 112,  92,  68,  51, 
+     68,  49,  49,  32,  80, 114, 
+    111, 106, 101,  99, 116, 115, 
+     92,  68, 105, 114, 101,  99, 
+    116,  88,  84,  75,  92,  83, 
+    114,  99,  92,  83, 104,  97, 
+    100, 101, 114, 115,  92,  76, 
+    105, 103, 104, 116, 105, 110, 
+    103,  46, 102, 120, 104,   0, 
+     67,  58,  92,  85, 115, 101, 
+    114, 115,  92,  67, 104, 117, 
+     99, 107,  87,  92,  68, 101, 
+    115, 107, 116, 111, 112,  92, 
+     68,  51,  68,  49,  49,  32, 
+     80, 114, 111, 106, 101,  99, 
+    116, 115,  92,  68, 105, 114, 
+    101,  99, 116,  88,  84,  75, 
+     92,  83, 114,  99,  92,  83, 
+    104,  97, 100, 101, 114, 115, 
+     92,  67, 111, 109, 109, 111, 
+    110,  46, 102, 120, 104,   0, 
+     40,   0,   0,   0, 118,   0, 
+      0,   0, 192,   0,   0,   0, 
+>>>>>>> Fixed merge issues
       0,   0, 255, 255,  24,   8, 
       0,   0,   0,   0, 255, 255, 
      48,   8,   0,   0,   0,   0, 

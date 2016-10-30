@@ -37,10 +37,14 @@
     dcl_2d s1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 113 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DualTextureEffect.fx"
 =======
 #line 113 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DualTextureEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 113 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DualTextureEffect.fx"
+>>>>>>> Fixed merge issues
     mov r0.xy, t1.wzyx
     texld r0, r0, s1  // ::overlay<0,1,2,3>
     texld r1, t1, s0  // ::color<0,1,2,3>
@@ -74,6 +78,7 @@ ret
 const BYTE DualTextureEffect_PSDualTextureNoFog[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 227,  55, 
     174, 115, 252, 158, 253,  12, 
     249, 146,  63, 111,  41,  79, 
@@ -84,6 +89,12 @@ const BYTE DualTextureEffect_PSDualTextureNoFog[] =
      95, 115, 254, 178, 212, 228, 
     228, 222,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67, 196, 148, 
+     30, 140, 234,  77,  42, 177, 
+     34, 112, 149, 118, 193, 110, 
+    184, 160,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
      44,   5,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     100,   3,   0,   0, 144,   4, 
@@ -107,19 +118,29 @@ const BYTE DualTextureEffect_PSDualTextureNoFog[] =
     200,   1,   0,   0, 224,   0, 
       0,   0,  67,  58,  92,  85, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
     115, 101, 114, 115,  92,  67, 
     104, 117,  99, 107,  87,  92, 
      68, 101, 115, 107, 116, 111, 
     112,  92,  68,  51,  68,  49, 
      49,  32,  80, 114, 111, 106, 
+<<<<<<< HEAD
     101,  99, 116, 115,  92,  68, 
     105, 114, 101,  99, 116,  88, 
      84,  75,  92,  83, 114,  99, 
+=======
+    101,  99, 116, 115,  92, 100, 
+    105, 114, 101,  99, 116, 120, 
+    116, 107,  92,  83, 114,  99, 
+>>>>>>> Fixed merge issues
      92,  83, 104,  97, 100, 101, 
     114, 115,  92,  68, 117,  97, 
     108,  84, 101, 120, 116, 117, 
     114, 101,  69, 102, 102, 101, 
      99, 116,  46, 102, 120,   0, 
+<<<<<<< HEAD
 =======
     115, 101, 114, 115,  92, 100, 
     110, 103, 111, 105, 110, 115, 
@@ -135,6 +156,8 @@ const BYTE DualTextureEffect_PSDualTextureNoFog[] =
     101,  69, 102, 102, 101,  99, 
     116,  46, 102, 120,   0, 171, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
     171, 171,  40,   0,   0,   0, 
       0,   0, 255, 255,  76,   2, 
       0,   0,   0,   0, 255, 255, 

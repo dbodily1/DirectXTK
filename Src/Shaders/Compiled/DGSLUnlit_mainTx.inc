@@ -39,10 +39,14 @@
     dcl_2d s0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 117 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
 =======
 #line 117 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\DGSLUnlit.hlsl"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 117 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\DGSLUnlit.hlsl"
+>>>>>>> Fixed merge issues
     texld r0, t1, s0
     mul r1, r0, t0  // ::local3<0,1,2>, ::local4<0>
     mov oC0, r1  // ::mainTx<0,1,2,3>
@@ -64,6 +68,7 @@ ret
 const BYTE DGSLUnlit_mainTx[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 251, 105, 
      62,   6, 137,  28, 155, 237, 
     127, 119,  43, 114,  95, 197, 
@@ -74,6 +79,12 @@ const BYTE DGSLUnlit_mainTx[] =
      16, 190,   3,  29, 224, 251, 
     177, 113,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67,   8,  58, 
+    162, 218,  87, 200,  80,  97, 
+    110,  56,  26,  68, 156, 148, 
+     12,  75,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
     224,   4,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
      36,   3,   0,   0, 192,   3, 
@@ -97,18 +108,27 @@ const BYTE DGSLUnlit_mainTx[] =
     240,   0,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+>>>>>>> Fixed merge issues
     114,  99,  92,  83, 104,  97, 
     100, 101, 114, 115,  92,  68, 
      71,  83,  76,  85, 110, 108, 
     105, 116,  46, 104, 108, 115, 
     108,   0,  40,   0,   0,   0, 
+<<<<<<< HEAD
 =======
      92, 100, 110, 103, 111, 105, 
     110, 115,  92,  83, 111, 117, 
@@ -123,6 +143,8 @@ const BYTE DGSLUnlit_mainTx[] =
     116,  46, 104, 108, 115, 108, 
       0, 171,  40,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+>>>>>>> Fixed merge issues
       0,   0, 255, 255, 112,   2, 
       0,   0,   0,   0, 255, 255, 
     124,   2,   0,   0,   0,   0, 

@@ -42,10 +42,14 @@
     dcl_2d s0
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 115 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
 =======
 #line 115 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\AlphaTestEffect.fx"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 115 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\AlphaTestEffect.fx"
+>>>>>>> Fixed merge issues
     texld r0, t2, s0
     mad r1.w, r0.w, t0.w, -c0.x
     mul r0, r0, t0  // ::color<0,1,2,3>
@@ -55,10 +59,14 @@
     texkill r1
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #line 20 "C:\Users\ChuckW\Desktop\D3D11 Projects\DirectXTK\Src\Shaders\Common.fxh"
 =======
 #line 20 "C:\Users\dngoins\Source\Repos\Dngoins\DirectXTK\Src\Shaders\Common.fxh"
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+#line 20 "C:\Users\ChuckW\Desktop\D3D11 Projects\directxtk\Src\Shaders\Common.fxh"
+>>>>>>> Fixed merge issues
     mad r1.xyz, c1, r0.w, -r0
     mad r0.xyz, t1.w, r1, r0  // ApplyFog::color<0,1,2>
     mov oC0, r0  // ::PSAlphaTestEqNe<0,1,2,3>
@@ -90,6 +98,7 @@ ret
 const BYTE AlphaTestEffect_PSAlphaTestEqNe[] =
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
      68,  88,  66,  67, 227, 144, 
     105,  35,  78,  36,  70, 238, 
      99, 102, 182,  28, 112,  61, 
@@ -100,6 +109,12 @@ const BYTE AlphaTestEffect_PSAlphaTestEqNe[] =
     173, 186, 112, 179, 155,  46, 
     153, 135,   1,   0,   0,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     68,  88,  66,  67, 113, 187, 
+     91,  96,  11,  66,  99,  30, 
+    141,  72, 248, 220, 179, 145, 
+    207,   1,   1,   0,   0,   0, 
+>>>>>>> Fixed merge issues
      56,   6,   0,   0,   4,   0, 
       0,   0,  48,   0,   0,   0, 
     220,   3,   0,   0, 156,   5, 
@@ -125,11 +140,15 @@ const BYTE AlphaTestEffect_PSAlphaTestEqNe[] =
      56,   1,   0,   0,  67,  58, 
      92,  85, 115, 101, 114, 115, 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Fixed merge issues
      92,  67, 104, 117,  99, 107, 
      87,  92,  68, 101, 115, 107, 
     116, 111, 112,  92,  68,  51, 
      68,  49,  49,  32,  80, 114, 
     111, 106, 101,  99, 116, 115, 
+<<<<<<< HEAD
      92,  68, 105, 114, 101,  99, 
     116,  88,  84,  75,  92,  83, 
     114,  99,  92,  83, 104,  97, 
@@ -177,6 +196,28 @@ const BYTE AlphaTestEffect_PSAlphaTestEqNe[] =
     102, 120, 104,   0, 171, 171, 
      40,   0,   0,   0, 119,   0, 
 >>>>>>> Recompiled shaders, added new ones based on updated Parent update
+=======
+     92, 100, 105, 114, 101,  99, 
+    116, 120, 116, 107,  92,  83, 
+    114,  99,  92,  83, 104,  97, 
+    100, 101, 114, 115,  92,  65, 
+    108, 112, 104,  97,  84, 101, 
+    115, 116,  69, 102, 102, 101, 
+     99, 116,  46, 102, 120,   0, 
+     67,  58,  92,  85, 115, 101, 
+    114, 115,  92,  67, 104, 117, 
+     99, 107,  87,  92,  68, 101, 
+    115, 107, 116, 111, 112,  92, 
+     68,  51,  68,  49,  49,  32, 
+     80, 114, 111, 106, 101,  99, 
+    116, 115,  92, 100, 105, 114, 
+    101,  99, 116, 120, 116, 107, 
+     92,  83, 114,  99,  92,  83, 
+    104,  97, 100, 101, 114, 115, 
+     92,  67, 111, 109, 109, 111, 
+    110,  46, 102, 120, 104,   0, 
+     40,   0,   0,   0, 120,   0, 
+>>>>>>> Fixed merge issues
       0,   0,   0,   0, 255, 255, 
     156,   2,   0,   0,   0,   0, 
     255, 255, 168,   2,   0,   0, 
