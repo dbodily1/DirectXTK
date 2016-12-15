@@ -26,8 +26,11 @@ using namespace DirectX;
 using Microsoft::WRL::ComPtr;
 using namespace Microsoft::WRL;
 using namespace Windows::Graphics::DirectX::Direct3D11;
+
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 using namespace Windows::Graphics::Holographic;
 using namespace Windows::Perception::Spatial;
+#endif
 
 namespace
 {
@@ -110,10 +113,13 @@ public:
 		static_assert((SpriteEffects_FlipBoth & (SourceInTexels | DestSizeInPixels)) == 0, "Flag bits must not overlap");
 	};
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 	// Method to update the Holographic render target buffers
 	void UpdateViewProjectionBuffer(
 		Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
 		Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem);
+
+#endif
 
 	// Method to set the constant buffer in the DirectX Pipeline
 	bool AttachViewProjectionBuffer();
@@ -709,6 +715,7 @@ void SpriteBatch::Impl::PrepareForRendering()
 	}
 }
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 // Updates the view/projection constant buffer for a holographic camera.
 void SpriteBatch::Impl::UpdateViewProjectionBuffer(
 	Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
@@ -826,6 +833,7 @@ bool SpriteBatch::Impl::AttachViewProjectionBuffer()
 	return true;
 }
 
+#endif
 
 // Sends queued sprites to the graphics device.
 void SpriteBatch::Impl::FlushBatch()
@@ -1406,6 +1414,8 @@ void SpriteBatch::SetViewport(const D3D11_VIEWPORT& viewPort)
 	pImpl->mViewPort = viewPort;
 }
 
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
+
 void SpriteBatch::UpdateViewProjectionBuffer(
 	Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
 	Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem) {
@@ -1416,3 +1426,5 @@ bool SpriteBatch::AttachViewProjectionBuffer()
 {
 	return pImpl->AttachViewProjectionBuffer();
 }
+
+#endif

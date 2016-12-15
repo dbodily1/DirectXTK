@@ -88,12 +88,14 @@ namespace DirectX
 
         // Set viewport for sprite transformation
         void __cdecl SetViewport( const D3D11_VIEWPORT& viewPort );
-		
+
+#if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)    	
 		// Holographic operations
 		void UpdateViewProjectionBuffer(
 			Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
 			Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem);
 		bool AttachViewProjectionBuffer();
+#endif
 
     private:
         // Private implementation.
