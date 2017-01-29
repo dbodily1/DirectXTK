@@ -236,12 +236,12 @@ SpriteFont::SpriteFont(_In_ ID3D11Device* device, _In_z_ wchar_t const* fileName
 
 
 // Construct from a binary blob created by the MakeSpriteFont utility and already loaded into memory.
-_Use_decl_annotations_
-SpriteFont::SpriteFont(ID3D11Device* device, uint8_t const* dataBlob, size_t dataSize, bool forceSRGB)
+
+SpriteFont::SpriteFont(ID3D11Device* device, uint8_t const* dataBlob, size_t dataSize)
 {
     BinaryReader reader(dataBlob, dataSize);
 
-    pImpl = std::make_unique<Impl>(device, &reader, forceSRGB);
+    pImpl = std::make_unique<Impl>(device, &reader, false);
 }
 
 
