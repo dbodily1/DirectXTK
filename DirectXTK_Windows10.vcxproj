@@ -68,8 +68,6 @@
     <None Include="Inc\SimpleMath.inl" />
     <None Include="Src\Shaders\Common.fxh" />
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNe.inc" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNe.pdb" />
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNeNoFog.inc" />
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNeNoFog.pdb" />
@@ -365,10 +363,7 @@
     <None Include="Src\Shaders\Lighting.fxh" />
     <None Include="Src\Shaders\Structures.fxh" />
     <None Include="Src\Shaders\Utilities.fxh" />
-=======
-=======
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNe.pdb" />
->>>>>>> Fixed merge issues
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNeNoFog.inc" />
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestEqNeNoFog.pdb" />
     <None Include="Src\Shaders\Compiled\AlphaTestEffect_PSAlphaTestLtGt.inc" />
@@ -622,7 +617,6 @@
     <None Include="Src\Shaders\CompileShaders.cmd" />
     <None Include="Src\Shaders\Lighting.fxh" />
     <None Include="Src\Shaders\Structures.fxh" />
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     <None Include="Src\TeapotData.inc" />
   </ItemGroup>
   <ItemGroup>
@@ -636,19 +630,13 @@
     <ClCompile Include="Audio\WAVFileReader.cpp" />
     <ClCompile Include="Src\AlphaTestEffect.cpp" />
     <ClCompile Include="Src\BasicEffect.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="Src\BasicPostProcess.cpp" />
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     <ClCompile Include="Src\BinaryReader.cpp" />
     <ClCompile Include="Src\CommonStates.cpp" />
     <ClCompile Include="Src\DDSTextureLoader.cpp" />
     <ClCompile Include="Src\DGSLEffect.cpp" />
     <ClCompile Include="Src\DGSLEffectFactory.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="Src\DualPostProcess.cpp" />
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     <ClCompile Include="Src\DualTextureEffect.cpp" />
     <ClCompile Include="Src\EffectCommon.cpp" />
     <ClCompile Include="Src\EffectFactory.cpp" />
@@ -663,14 +651,7 @@
     <ClCompile Include="Src\ModelLoadSDKMESH.cpp" />
     <ClCompile Include="Src\ModelLoadVBO.cpp" />
     <ClCompile Include="Src\Mouse.cpp" />
-<<<<<<< HEAD
-<<<<<<< HEAD
     <ClCompile Include="Src\NormalMapEffect.cpp" />
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
-=======
-    <ClCompile Include="Src\NormalMapEffect.cpp" />
->>>>>>> Fixed merge issues
     <ClCompile Include="Src\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -685,10 +666,7 @@
     <ClCompile Include="Src\SkinnedEffect.cpp" />
     <ClCompile Include="Src\SpriteBatch.cpp" />
     <ClCompile Include="Src\SpriteFont.cpp" />
-<<<<<<< HEAD
     <ClCompile Include="Src\ToneMapPostProcess.cpp" />
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     <ClCompile Include="Src\VertexTypes.cpp" />
     <ClCompile Include="Src\WICTextureLoader.cpp" />
   </ItemGroup>
@@ -728,16 +706,11 @@
     <Text Include="Readme.txt" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> Fixed merge issues
     <None Include="Src\Shaders\NormalMapEffect.fx">
       <FileType>Document</FileType>
     </None>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <None Include="Src\Shaders\PostProcess.fx">
       <FileType>Document</FileType>
     </None>
@@ -746,7 +719,6 @@
     <None Include="Src\Shaders\ToneMap.fx">
       <FileType>Document</FileType>
     </None>
-=======
     <FxCompile Include="Src\Shaders\PassThruGeometryShader.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Geometry</ShaderType>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">4.0</ShaderModel>
@@ -762,12 +734,9 @@
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0</ShaderModel>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">SpriteGeometryShader</EntryPointName>
     </FxCompile>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
-=======
     <None Include="Src\Shaders\PassThruGeometryShader.hlsl">
       <FileType>Document</FileType>
     </None>
->>>>>>> Fixed merge issues
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{f4776924-619c-42c7-88b2-82c947ccc9e7}</ProjectGuid>
@@ -778,74 +747,40 @@
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <AppContainerApplication>true</AppContainerApplication>
     <ApplicationType>Windows Store</ApplicationType>
-<<<<<<< HEAD
-<<<<<<< HEAD
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
-=======
-    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
-    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
-=======
-    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
-    <WindowsTargetPlatformMinVersion>10.0.10586.0</WindowsTargetPlatformMinVersion>
->>>>>>> Fixed merge issues
     <ApplicationTypeRevision>10.0</ApplicationTypeRevision>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-<<<<<<< HEAD
     <PlatformToolset>v141</PlatformToolset>
-=======
-    <PlatformToolset>v140</PlatformToolset>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -911,210 +846,117 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
-      <CompileAsWinRT>false</CompileAsWinRT>
-=======
       <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
       <CompileAsWinRT>false</CompileAsWinRT>
-=======
-      <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
       <CompileAsWinRT>false</CompileAsWinRT>
-=======
-      <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
       <CompileAsWinRT>false</CompileAsWinRT>
-=======
-      <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
       <CompileAsWinRT>false</CompileAsWinRT>
-=======
-      <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
-<<<<<<< HEAD
       <CompileAsWinRT>false</CompileAsWinRT>
-=======
-      <CompileAsWinRT>true</CompileAsWinRT>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>$(ProjectDir)Inc;$(ProjectDir)Src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FloatingPointModel>Fast</FloatingPointModel>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
-<<<<<<< HEAD
       <WarningLevel>EnableAllWarnings</WarningLevel>
       <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>/permissive- /Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
-=======
-      <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>_CRT_STDIO_ARBITRARY_WIDE_SPECIFIERS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
     </Link>
-<<<<<<< HEAD
-=======
-    <Lib>
-      <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-<<<<<<< HEAD
   <Target Name="ATGEnsureShaders" BeforeTargets="PrepareForBuild">
     <Exec Condition="!Exists('src/Shaders/Compiled/SpriteEffect_SpriteVertexShader.inc')" WorkingDirectory="$(ProjectDir)src/Shaders" Command="CompileShaders" />
   </Target>
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update
 </Project>
