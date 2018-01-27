@@ -78,6 +78,7 @@
 #pragma warning(push)
 #pragma warning(disable: 4471)
 #include <Windows.UI.Core.h>
+#include <windows.graphics.holographic.h>
 #pragma warning(pop)
 #endif
 

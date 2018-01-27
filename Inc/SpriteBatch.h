@@ -1,4 +1,4 @@
-ks//
+//
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
 // THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
@@ -21,6 +21,11 @@ ks//
 #include <DirectXColors.h>
 #include <functional>
 #include <memory>
+#include <windows.graphics.directx.direct3d11.interop.h>
+#include <windows.graphics.holographic.h>
+#include <windows.devices.perception.h>
+#include <windows.perception.spatial.h>
+#include <windows.perception.spatial.surfaces.h>
 
 
 namespace DirectX
@@ -83,9 +88,9 @@ namespace DirectX
         void __cdecl SetViewport( const D3D11_VIEWPORT& viewPort );
 		
 		// Holographic operations
-		void UpdateViewProjectionBuffer(
-			Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
-			Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem);
+		void UpdateViewProjectionBuffer( 
+			ABI::Windows::Graphics::Holographic::IHolographicCameraPose * cameraPose,
+			ABI::Windows::Perception::Spatial::ISpatialCoordinateSystem * coordinateSystem);
 		bool AttachViewProjectionBuffer();
 
     private:

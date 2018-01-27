@@ -20,14 +20,19 @@
 #include "SharedResourcePool.h"
 #include "AlignedNew.h"
 #include <windows.graphics.directx.direct3d11.interop.h>
+#include <windows.graphics.holographic.h>
+#include <windows.devices.perception.h>
+#include <windows.perception.spatial.h>
+#include <windows.perception.spatial.surfaces.h>
+
 
 
 using namespace DirectX;
 using Microsoft::WRL::ComPtr;
 using namespace Microsoft::WRL;
 using namespace Windows::Graphics::DirectX::Direct3D11;
-using namespace Windows::Graphics::Holographic;
-using namespace Windows::Perception::Spatial;
+using namespace ABI::Windows::Graphics::Holographic;
+using namespace ABI::Windows::Perception::Spatial;
 
 namespace
 {
@@ -112,8 +117,8 @@ public:
 
 	// Method to update the Holographic render target buffers
 	void UpdateViewProjectionBuffer(
-		Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
-		Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem);
+		ABI::Windows::Graphics::Holographic::IHolographicCameraPose *  cameraPose,
+		ABI::Windows::Perception::Spatial::ISpatialCoordinateSystem * coordinateSystem);
 
 	// Method to set the constant buffer in the DirectX Pipeline
 	bool AttachViewProjectionBuffer();
@@ -431,7 +436,7 @@ void SpriteBatch::Impl::ContextResources::CreateVertexBuffer()
 	if (m_viewProjectionConstantBuffer == nullptr)
 	{
 		// Create a constant buffer to store view and projection matrices for the camera.
-		CD3D11_BUFFER_DESC constantBufferDesc(sizeof(ViewProjectionConstantBuffer), D3D11_BIND_CONSTANT_BUFFER);
+		CD3D11_BUFFER_DESC constantBufferDesc(sizeof(m_viewProjectionConstantBuffer), D3D11_BIND_CONSTANT_BUFFER);
 		ThrowIfFailed(
 			GetDevice(deviceContext.Get())->CreateBuffer(
 				&constantBufferDesc,
@@ -711,25 +716,34 @@ void SpriteBatch::Impl::PrepareForRendering()
 
 // Updates the view/projection constant buffer for a holographic camera.
 void SpriteBatch::Impl::UpdateViewProjectionBuffer(
-	Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
-	Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem
+	ABI::Windows::Graphics::Holographic::IHolographicCameraPose * cameraPose,
+	ABI::Windows::Perception::Spatial::ISpatialCoordinateSystem * coordinateSystem
 )
 {
+	ABI::Windows::Foundation::Rect Viewport = { 0 };
+	_ASSERT(SUCCEEDED(cameraPose->get_Viewport(&Viewport)));
+
 	m_d3dViewport = CD3D11_VIEWPORT(
-		cameraPose->Viewport.Left,
-		cameraPose->Viewport.Top,
-		cameraPose->Viewport.Width,
-		cameraPose->Viewport.Height
+		Viewport.X,
+		Viewport.Y,
+		Viewport.Width,
+		Viewport.Height
 	);
 
-	// The projection transform for each frame is provided by the HolographicCameraPose.
-	Windows::Graphics::Holographic::HolographicStereoTransform cameraProjectionTransform = cameraPose->ProjectionTransform;
 
+	// The projection transform for each frame is provided by the HolographicCameraPose.
+	ABI::Windows::Graphics::Holographic::HolographicStereoTransform * cameraProjectionTransform = nullptr;
+	_ASSERT(SUCCEEDED(cameraPose->get_ProjectionTransform(cameraProjectionTransform)));
+
+	
 
 	// Get a container object with the view and projection matrices for the given
 	// pose in the given coordinate system.
-	Platform::IBox<Windows::Graphics::Holographic::HolographicStereoTransform>^ viewTransformContainer = cameraPose->TryGetViewTransform(coordinateSystem);
+	
+	ABI::Windows::Foundation::__FIReference_1_Windows__CGraphics__CHolographic__CHolographicStereoTransform_t * viewTransformContainer = nullptr;
+	_ASSERT(SUCCEEDED(cameraPose->TryGetViewTransform(coordinateSystem, &viewTransformContainer)));
 
+	
 	// If TryGetViewTransform returns a null pointer, that means the pose and coordinate
 	// system cannot be understood relative to one another; content cannot be rendered
 	// in this coordinate system for the duration of the current frame.
@@ -740,22 +754,28 @@ void SpriteBatch::Impl::UpdateViewProjectionBuffer(
 	bool viewTransformAcquired = viewTransformContainer != nullptr;
 	if (viewTransformAcquired)
 	{
-		// Otherwise, the set of view transforms can be retrieved.
-		Windows::Graphics::Holographic::HolographicStereoTransform viewCoordinateSystemTransform = viewTransformContainer->Value;
+			// Otherwise, the set of view transforms can be retrieved.
+			ABI::Windows::Graphics::Holographic::HolographicStereoTransform * viewCoordinateSystemTransform = nullptr;
+			_ASSERT(SUCCEEDED(viewTransformContainer->get_Value(viewCoordinateSystemTransform)));
+
 
 		// Update the view matrices. Holographic cameras (such as Microsoft HoloLens) are
 		// constantly moving relative to the world. The view matrices need to be updated
 		// every frame.
+			XMFLOAT4X4 leftMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform->Left);
+			XMFLOAT4X4 leftTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform->Left);
+
 		XMStoreFloat4x4(
 			&viewProjectionConstantBufferData.viewProjection[0],
-			XMMatrixTranspose(XMLoadFloat4x4(&viewCoordinateSystemTransform.Left) * XMLoadFloat4x4(&(cameraProjectionTransform.Left)))
-		);
+			XMMatrixTranspose(XMLoadFloat4x4(&leftMatrix) * XMLoadFloat4x4(&leftTransform)));
 
-
+		XMFLOAT4X4 rightMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform->Right);
+		XMFLOAT4X4 rightTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform->Right);
+	
 		XMStoreFloat4x4(
 			&viewProjectionConstantBufferData.viewProjection[1],
-			XMMatrixTranspose(XMLoadFloat4x4(&viewCoordinateSystemTransform.Right) * XMLoadFloat4x4(&(cameraProjectionTransform.Right)))
-		);
+			XMMatrixTranspose(XMLoadFloat4x4(&rightMatrix) * XMLoadFloat4x4(&rightTransform)));
+		
 	}
 
 	// Use the D3D device context to update Direct3D device-based resources.
@@ -1407,8 +1427,8 @@ void SpriteBatch::SetViewport(const D3D11_VIEWPORT& viewPort)
 }
 
 void SpriteBatch::UpdateViewProjectionBuffer(
-	Windows::Graphics::Holographic::HolographicCameraPose^ cameraPose,
-	Windows::Perception::Spatial::SpatialCoordinateSystem^ coordinateSystem) {
+	ABI::Windows::Graphics::Holographic::IHolographicCameraPose * cameraPose,
+	ABI::Windows::Perception::Spatial::ISpatialCoordinateSystem  * coordinateSystem) {
 	pImpl->UpdateViewProjectionBuffer(cameraPose, coordinateSystem);
 }
 
@@ -1416,7 +1436,3 @@ bool SpriteBatch::AttachViewProjectionBuffer()
 {
 	return pImpl->AttachViewProjectionBuffer();
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> Recompiled shaders, added new ones based on updated Parent update

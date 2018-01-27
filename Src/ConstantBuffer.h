@@ -20,6 +20,11 @@
 
 namespace DirectX
 {
+	struct ViewProjectionConstantBuffer
+	{
+		XMFLOAT4X4 viewProjection[2];
+	};
+
     // Strongly typed wrapper around a D3D constant buffer.
     template<typename T>
     class ConstantBuffer

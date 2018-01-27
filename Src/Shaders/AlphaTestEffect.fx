@@ -25,6 +25,7 @@ cbuffer Parameters : register(b0)
 
 #include "Structures.fxh"
 #include "Common.fxh"
+#include "Utilities.fxh"
 
 
 // Vertex shader: basic.
