@@ -20,10 +20,15 @@
 
 namespace DirectX
 {
-	struct ViewProjectionConstantBuffer
+	// Constant buffer used to send the view-projection matrices to the shader pipeline.
+	__declspec(align(16)) struct ViewProjectionConstantBuffer
 	{
-		XMFLOAT4X4 viewProjection[2];
+		DirectX::XMFLOAT4X4 viewProjection[2];
 	};
+
+	// Assert that the constant buffer remains 16-byte aligned (best practice).
+	static_assert((sizeof(ViewProjectionConstantBuffer) % (sizeof(float) * 4)) == 0, "ViewProjection constant buffer size must be 16-byte aligned (16 bytes is the length of four floats).");
+
 
     // Strongly typed wrapper around a D3D constant buffer.
     template<typename T>

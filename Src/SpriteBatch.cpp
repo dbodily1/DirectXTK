@@ -435,8 +435,9 @@ void SpriteBatch::Impl::ContextResources::CreateVertexBuffer()
 	// Create the constant buffer, if needed.
 	if (m_viewProjectionConstantBuffer == nullptr)
 	{
-		// Create a constant buffer to store view and projection matrices for the camera.
-		CD3D11_BUFFER_DESC constantBufferDesc(sizeof(m_viewProjectionConstantBuffer), D3D11_BIND_CONSTANT_BUFFER);
+		// Create a constant buffer to store view and projection matrices for the camera. had to use 16bit size
+		CD3D11_BUFFER_DESC constantBufferDesc(sizeof(ViewProjectionConstantBuffer) * 4, D3D11_BIND_CONSTANT_BUFFER);
+		 
 		ThrowIfFailed(
 			GetDevice(deviceContext.Get())->CreateBuffer(
 				&constantBufferDesc,
@@ -732,8 +733,9 @@ void SpriteBatch::Impl::UpdateViewProjectionBuffer(
 
 
 	// The projection transform for each frame is provided by the HolographicCameraPose.
-	ABI::Windows::Graphics::Holographic::HolographicStereoTransform * cameraProjectionTransform = nullptr;
-	_ASSERT(SUCCEEDED(cameraPose->get_ProjectionTransform(cameraProjectionTransform)));
+	ABI::Windows::Graphics::Holographic::HolographicStereoTransform  cameraProjectionTransform = { 0 };
+
+	_ASSERT(SUCCEEDED(cameraPose->get_ProjectionTransform(&cameraProjectionTransform)));
 
 	
 
@@ -755,22 +757,22 @@ void SpriteBatch::Impl::UpdateViewProjectionBuffer(
 	if (viewTransformAcquired)
 	{
 			// Otherwise, the set of view transforms can be retrieved.
-			ABI::Windows::Graphics::Holographic::HolographicStereoTransform * viewCoordinateSystemTransform = nullptr;
-			_ASSERT(SUCCEEDED(viewTransformContainer->get_Value(viewCoordinateSystemTransform)));
+		ABI::Windows::Graphics::Holographic::HolographicStereoTransform  viewCoordinateSystemTransform = { 0 };
+			_ASSERT(SUCCEEDED(viewTransformContainer->get_Value(&viewCoordinateSystemTransform)));
 
 
 		// Update the view matrices. Holographic cameras (such as Microsoft HoloLens) are
 		// constantly moving relative to the world. The view matrices need to be updated
 		// every frame.
-			XMFLOAT4X4 leftMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform->Left);
-			XMFLOAT4X4 leftTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform->Left);
+			XMFLOAT4X4 leftMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform.Left);
+			XMFLOAT4X4 leftTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform.Left);
 
 		XMStoreFloat4x4(
 			&viewProjectionConstantBufferData.viewProjection[0],
 			XMMatrixTranspose(XMLoadFloat4x4(&leftMatrix) * XMLoadFloat4x4(&leftTransform)));
 
-		XMFLOAT4X4 rightMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform->Right);
-		XMFLOAT4X4 rightTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform->Right);
+		XMFLOAT4X4 rightMatrix = DirectX::Numerics::ToDirectXMatrix(viewCoordinateSystemTransform.Right);
+		XMFLOAT4X4 rightTransform = DirectX::Numerics::ToDirectXMatrix(cameraProjectionTransform.Right);
 	
 		XMStoreFloat4x4(
 			&viewProjectionConstantBufferData.viewProjection[1],
