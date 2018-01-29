@@ -4,6 +4,10 @@ DirectXTK - the DirectX Tool Kit for DirectX 11
 
 Copyright (c) Microsoft Corporation. All rights reserved.
 
+January 29, 2018
+
+This fork contains updates to support Microsoft HoloLens for rendering text. More work needs to be done to render models.
+
 September 22, 2017
 
 This package contains the "DirectX Tool Kit", a collection of helper classes for 
