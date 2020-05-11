@@ -651,10 +651,11 @@ void SpriteBatch::Impl::PrepareForRendering()
 	auto rasterizerState = mRasterizerState ? mRasterizerState.Get() : mDeviceResources->stateObjects.CullCounterClockwise();
 	auto samplerState = mSamplerState ? mSamplerState.Get() : mDeviceResources->stateObjects.LinearClamp();
 
-	deviceContext->OMSetBlendState(blendState, nullptr, 0xFFFFFFFF);
-	deviceContext->OMSetDepthStencilState(depthStencilState, 0);
-	deviceContext->RSSetState(rasterizerState);
-	deviceContext->PSSetSamplers(0, 1, &samplerState);
+	//(BODILY TURNED OFF)
+	//deviceContext->OMSetBlendState(blendState, nullptr, 0xFFFFFFFF);
+	//deviceContext->OMSetDepthStencilState(depthStencilState, 0);
+	//deviceContext->RSSetState(rasterizerState);
+	//deviceContext->PSSetSamplers(0, 1, &samplerState);
 
 	// Set shaders.
 	deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
