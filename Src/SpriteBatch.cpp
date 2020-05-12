@@ -688,7 +688,7 @@ void SpriteBatch::Impl::PrepareForRendering()
 	// Set the transform matrix.
 	XMMATRIX transformMatrix = (mRotation == DXGI_MODE_ROTATION_UNSPECIFIED)
 		? mTransformMatrix
-		: (mTransformMatrix * GetViewportTransform(deviceContext, mRotation));
+		: (GetViewportTransform(deviceContext, mRotation)*mTransformMatrix);
 
 #if defined(_XBOX_ONE) && defined(_TITLE)
 	void* grfxMemory;
