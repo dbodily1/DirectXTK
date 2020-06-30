@@ -655,7 +655,7 @@ void SpriteBatch::Impl::PrepareForRendering()
 	//deviceContext->OMSetBlendState(blendState, nullptr, 0xFFFFFFFF);
 	//deviceContext->OMSetDepthStencilState(depthStencilState, 0);
 	//deviceContext->RSSetState(rasterizerState);
-	//deviceContext->PSSetSamplers(0, 1, &samplerState);
+	deviceContext->PSSetSamplers(0, 1, &samplerState);
 
 	// Set shaders.
 	deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
