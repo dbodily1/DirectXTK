@@ -14,6 +14,7 @@
 #include "pch.h"
 #include "Geometry.h"
 #include "Bezier.h"
+#include <stdexcept>//Bodily ADDed - not sure why
 
 using namespace DirectX;
 
